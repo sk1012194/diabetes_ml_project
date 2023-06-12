@@ -1,5 +1,7 @@
 numpy
 pandas
-pickle
+Pillow
+Requests
+scikit_learn
 streamlit
-scikit-learn
+streamlit_lottie
