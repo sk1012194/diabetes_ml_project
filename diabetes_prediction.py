@@ -21,12 +21,15 @@ def diabetes_prediction(input_data):
 
  # reshape the array as we are predicting for one instance
  input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
+ # standardize the input data
+ std_data = scaler.transform(input_data_reshaped)
+ print(std_data)
 
 
- prediction = loaded_model.predict(input_data_reshaped)
+ prediction = loaded_model.predict(std_data)
  print(prediction)
 
- if (prediction[0] == 1):
+ if (prediction[0] == 0):
    return'The person is not diabetic'
  else:
    return'The person is diabetic'
