@@ -8,7 +8,8 @@ This is a temporary script file.
 import numpy as np
 import pickle
 
-loaded_model = pickle.load(open('D:\Deploying_model/trained_model.sav','rb'))
+
+loaded_model = pickle.load(open("D:\Deploying_model/trained_model_diabetes.sav",'rb'))
 
 input_data = (5,166,72,19,175,25.8,0.587,51)
 
