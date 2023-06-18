@@ -13,7 +13,7 @@ import streamlit as st
 diabetes_model = pickle.load(open('trained_model_diabetes.sav', 'rb'))
 
 # page title
-st.title('Diabetes Prediction using ML')
+st.title('Diabetes Prediction using ML By Suraj Kumar')
 
 # getting the input data from the user
 col1, col2, col3 = st.columns(3)
